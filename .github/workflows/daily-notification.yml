@@ -24,4 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python script
+        env:
+          LINE_CHANNEL_TOKKEN: ${{ secrets.LINE_CHANNEL_TOKKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
         run: python daily_stock_notifications.py
