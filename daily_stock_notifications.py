@@ -107,8 +107,8 @@ full_message = run_all(tickers)
 print(full_message)
 
 # 用你自己的 Token 和 User ID
-channel_access_token = $LINE_CHANNEL_TOKKEN
-user_id = $LINE_USER_ID
+channel_access_token = os.getenv("LINE_CHANNEL_TOKKEN")
+user_id = os.getenv("LINE_USER_ID")
 
 headers = {
     "Content-Type": "application/json",
