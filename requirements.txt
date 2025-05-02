@@ -1,0 +1,5 @@
+requests
+pandas
+twstock
+scipy
+lxml
