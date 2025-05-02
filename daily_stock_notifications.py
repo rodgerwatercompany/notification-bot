@@ -11,6 +11,8 @@ import pandas as pd
 import numpy as np
 from scipy.stats import norm
 import twstock
+import requests
+import os
 
 # 1. 資料下載處理模組
 def get_stock_data(ticker, start_date):
@@ -98,8 +100,6 @@ def run_all(tickers):
     # 合併成完整訊息
     today = datetime.date.today().strftime('%Y-%m-%d')
     return f"📊【高點預測總覽】{today}\n\n" + "\n\n".join(summary_lines)
-
-import requests
 
 tickers = ['2317', '2303', '2330']  # 自行修改代碼清單
 full_message = run_all(tickers)
