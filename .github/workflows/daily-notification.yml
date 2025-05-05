@@ -1,9 +1,9 @@
 name: Daily Stock Notification
 
 on:
-  schedule:
-    - cron: '50 0 * * *'  # 台灣時間 08:50
-    - cron: '31 5 * * *'  # 台灣時間 08:50
+  # schedule:
+    # - cron: '50 0 * * *'  # 台灣時間 08:50
+    # - cron: '31 5 * * *'  # 台灣時間 08:50
   workflow_dispatch:
 
 jobs:
